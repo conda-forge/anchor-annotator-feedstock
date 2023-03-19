@@ -1,5 +1,5 @@
 {% set name = "anchor-annotator" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/A/Anchor_annotator/Anchor_annotator-{{ version }}.tar.gz
-  sha256: d9673dcb4d74a1cbab5932c7191194e310db13f25a0b61f7e9ee4cb519ede8f4
+  sha256: d698c124f4a8c91925fc7bdedbec4e4a6f747e3a7c29dd29789e521a138b3d7c
 
 build:
   noarch: python
@@ -20,7 +20,6 @@ requirements:
     - pip
     - setuptools
     - setuptools_scm
-    - wheel
   run:
     - python >=3.6
     - montreal-forced-aligner
