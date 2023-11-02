@@ -1,5 +1,5 @@
 {% set name = "anchor-annotator" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/A/Anchor_annotator/Anchor_annotator-{{ version }}.tar.gz
-  sha256: 5d7820d17ade5f8cdb506345acb70e85377730ae477ae5017def3f4011af2713
+  sha256: 4b719c1910f475dcf5835eb0d961368fae373b560c53f3ad7307e19dbcf08750
 
 build:
   noarch: python
@@ -21,19 +21,30 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.9
     - montreal-forced-aligner
     - pyside6
     - pyqtgraph
     - resampy
     - librosa
     - numpy
+    - pysoundfile
+    - sqlalchemy
+    - scikit-learn
+    - biopython
+    - dataclassy
+    - kalpy
+    - pynini
+    - pyyaml
+    - tqdm
+    - psycopg2
 
 test:
   imports:
     - anchor
   requires:
     - pip
+    - kaldi =*=cpu*
   commands:
     - mfa anchor --help
 
