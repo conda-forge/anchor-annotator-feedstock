@@ -21,19 +21,30 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.9
     - montreal-forced-aligner
     - pyside6
     - pyqtgraph
     - resampy
     - librosa
     - numpy
+    - pysoundfile
+    - sqlalchemy
+    - scikit-learn
+    - biopython
+    - dataclassy
+    - kalpy
+    - pynini
+    - pyyaml
+    - tqdm
+    - psycopg2
 
 test:
   imports:
     - anchor
   requires:
     - pip
+    - kaldi =*=cpu*
   commands:
     - mfa anchor --help
 
