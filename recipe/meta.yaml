@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.9
-    - montreal-forced-aligner
+    - montreal-forced-aligner >3.0
     - pyside6
     - pyqtgraph
     - resampy
