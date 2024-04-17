@@ -41,10 +41,10 @@ requirements:
     - montreal-forced-aligner
 
 test:
-  imports:
-    - anchor.command_line.main
   requires:
     - pip
+  imports:
+    - anchor.command_line.main
   commands:
     - mfa anchor --help
 
