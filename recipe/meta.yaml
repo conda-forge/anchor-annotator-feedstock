@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,7 +25,6 @@ requirements:
     - montreal-forced-aligner >3.0
     - pyside6
     - pyqtgraph
-    - resampy
     - librosa
     - numpy
     - pysoundfile
@@ -42,10 +41,10 @@ requirements:
     - montreal-forced-aligner
 
 test:
-  imports:
-    - anchor
   requires:
     - pip
+  imports:
+    - anchor.command_line
   commands:
     - mfa anchor --help
 
