@@ -1,5 +1,5 @@
 {% set name = "anchor-annotator" %}
-{% set version = "0.6.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/A/Anchor_annotator/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2862d0584cf69c192b36965e3fd4b23a6320b7ce2c26ade2915fb18df31ed5e9
+  sha256: a4447379149cee85540d7a6b29f8268cc16050f426e16a6d6ad2e29fc8ed2ccd
 
 build:
   noarch: python
@@ -23,6 +23,8 @@ requirements:
   run:
     - python >=3.9
     - montreal-forced-aligner >3.0
+    - qt6-main
+    - qt6-multimedia
     - pyside6
     - pyqtgraph
     - librosa
@@ -38,7 +40,6 @@ requirements:
     - tqdm
     - psycopg2
   run_constrained:
-    - montreal-forced-aligner
     - pyside6
 
 test:
