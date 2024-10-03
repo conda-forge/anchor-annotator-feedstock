@@ -1,5 +1,5 @@
 {% set name = "anchor-annotator" %}
-{% set version = "0.6.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/A/Anchor_annotator/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2862d0584cf69c192b36965e3fd4b23a6320b7ce2c26ade2915fb18df31ed5e9
+  sha256: 41278bb3d34cf39942009938b01686e6fdf8eb1367ae8dc901bd89a9cf5ab09b
 
 build:
   noarch: python
