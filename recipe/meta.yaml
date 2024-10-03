@@ -23,6 +23,8 @@ requirements:
   run:
     - python >=3.9
     - montreal-forced-aligner >3.0
+    - qt6-main
+    - qt6-multimedia
     - pyside6
     - pyqtgraph
     - librosa
