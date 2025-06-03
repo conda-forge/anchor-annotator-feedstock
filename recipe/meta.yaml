@@ -34,7 +34,7 @@ requirements:
     - scikit-learn
     - biopython
     - dataclassy
-    - kalpy =*=cpu*
+    - kalpy
     - pynini
     - pyyaml
     - tqdm
